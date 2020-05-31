@@ -9,4 +9,23 @@ func main() {
 	fmt.Println(cap(s))
 	a := [5]int{1, 2, 3, 4, 5}
 	fmt.Println(a[:])
+
+	b := []int{1, 2, 3}
+	b = append(b, 4)
+	fmt.Println(b)
+
+	c := make([]int, 0, 0)
+	fmt.Printf("len=%d, cap=%d\n", len(c), cap(c))
+
+	c = append(c, 1)
+	fmt.Printf("len=%d, cap=%d\n", len(c), cap(c))
+
+	c = append(c, []int{2, 3, 4}...)
+	fmt.Printf("len=%d, cap%d\n", len(c), cap(c))
+
+	c = append(c, 5)
+	fmt.Printf("len=%d, cap=%d\n", len(c), cap(c))
+
+	c = append(s, 6, 7, 8, 9)
+	fmt.Printf("len=%d, cap=%d\n", len(c), cap(c))
 }
