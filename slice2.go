@@ -28,4 +28,17 @@ func main() {
 
 	c = append(s, 6, 7, 8, 9)
 	fmt.Printf("len=%d, cap=%d\n", len(c), cap(c))
+
+	d := [10]int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+	s1 := d[2:4]
+	fmt.Println(s1)
+	fmt.Printf("len=%d, cap=%d\n", len(s1), cap(s1))
+
+	s2 := d[2:4:4]
+	fmt.Println(s2)
+	fmt.Printf("len=%d, cap=%d\n", len(s2), cap(s2))
+
+	s3 := d[2:4:6]
+	fmt.Println(s3)
+	fmt.Printf("len=%d, cap=%d\n", len(s3), cap(s3))
 }
