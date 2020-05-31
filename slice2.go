@@ -1,0 +1,12 @@
+package main
+
+import "fmt"
+
+func main() {
+	s := make([]int, 10, 20)
+	fmt.Println(s)
+	fmt.Println(len(s))
+	fmt.Println(cap(s))
+	a := [5]int{1, 2, 3, 4, 5}
+	fmt.Println(a[:])
+}
