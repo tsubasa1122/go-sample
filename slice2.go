@@ -41,4 +41,9 @@ func main() {
 	s3 := d[2:4:6]
 	fmt.Println(s3)
 	fmt.Printf("len=%d, cap=%d\n", len(s3), cap(s3))
+
+	s4 := []string{"Apple", "Banana", "Cherry"}
+	for i, v := range s4 {
+		fmt.Printf("[%d] => %s\n", i, v)
+	}
 }
