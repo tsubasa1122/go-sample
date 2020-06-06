@@ -30,4 +30,12 @@ func main() {
 
 	_, ok2 := m3[3]
 	fmt.Println(ok2)
+
+	m4 := map[int][]int{
+		1: []int{1},
+		2: []int{1, 2},
+		3: []int{1, 2, 3},
+	}
+
+	fmt.Println(m4)
 }
