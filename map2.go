@@ -38,4 +38,10 @@ func main() {
 	}
 
 	fmt.Println(m4)
+
+	m5 := map[int]map[float64]string{
+		1: {3.14: "円周率"},
+	}
+
+	fmt.Println(m5)
 }
