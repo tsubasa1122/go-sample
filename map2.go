@@ -44,4 +44,17 @@ func main() {
 	}
 
 	fmt.Println(m5)
+
+	m6 := map[string]int{
+		"Apple":  88,
+		"Banana": 107,
+		"Cherry": 46,
+	}
+	m6["Grape"] = 66
+	m6["Lemon"] = 16
+	m6["Orange"] = 44
+	m6["Pineapple"] = 73
+	for k, v := range m6 {
+		fmt.Printf("%s => %d\n", k, v)
+	}
 }
