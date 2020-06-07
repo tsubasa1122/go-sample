@@ -57,4 +57,9 @@ func main() {
 	for k, v := range m6 {
 		fmt.Printf("%s => %d\n", k, v)
 	}
+
+	m7 := map[int]string{1: "A", 2: "B", 3: "C"}
+	delete(m7, 2)
+
+	fmt.Println(m7)
 }
